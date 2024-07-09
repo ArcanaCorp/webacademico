@@ -1,0 +1,64 @@
+.__section_about {
+    width: 100%;
+    padding: 3rem 0rem;
+}
+
+.__section_about .__content_section .__ttitle {
+    color: #193154;
+    text-align: center;
+}
+
+.__content_section .__content_card {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.__content_section .__content_card .__card {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 2rem .5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .2);
+}
+
+.__content_section .__content_card .__card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 12px;
+    background-color: #48B1F2;
+}
+
+.__content_section .__content_card .__card .__card_img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.__content_section .__content_card .__card .__card_txt {
+    text-align: center;
+    padding: 2rem 0rem;
+}
+.__content_section .__content_card .__card .__card_txt h4 {
+    margin-bottom: .5rem;
+}
+.__content_section .__content_card .__card .__card_txt p {
+    font-size: .9rem;
+    color: #888888; 
+}
+
+@media (min-width: 1440px) {
+    .__content_section .__content_card {
+        flex-direction: row;
+    }
+    .__content_section .__content_card .__card .__card_txt p {
+        font-size: .8rem;
+    }
+}
